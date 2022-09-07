@@ -29,12 +29,14 @@ public class Kotik {
         return this.satiety > 0;
     }
     private boolean sayMeow() {
-        boolean current_condition = this.isSatiety();
-        if (current_condition) {
-            System.out.printf("%s say %s\n", this.name, this.meow);
-            this.satiety--;
+
+        if (!this.isSatiety()) {
+            return false;
         }
-        return current_condition;
+
+        System.out.printf("%s say %s\n", this.name, this.meow);
+        this.satiety--;
+        return true;
     }
 
     public void liveAnotherDay() {
@@ -83,48 +85,58 @@ public class Kotik {
     }
 
     private boolean play() {
-        boolean current_condition = this.isSatiety();
-        if (current_condition) {
-            System.out.printf("%s playing\n", this.name);
-            this.satiety--;
+
+        if (!this.isSatiety()) {
+            return false;
         }
-        return current_condition;
+
+        System.out.printf("%s playing\n", this.name);
+        this.satiety--;
+        return true;
     }
 
     private boolean sleep() {
-        boolean current_condition = this.isSatiety();
-        if (current_condition) {
-            System.out.printf("%s sleeping\n", this.name);
-            this.satiety--;
+
+        if (!this.isSatiety()) {
+            return false;
         }
-        return current_condition;
+
+        System.out.printf("%s sleeping\n", this.name);
+        this.satiety--;
+        return true;
     }
 
     private boolean chaseMouse() {
-        boolean current_condition = this.isSatiety();
-        if (current_condition) {
-            System.out.printf("%s chasing mouse\n", this.name);
-            this.satiety--;
+
+        if (!this.isSatiety()) {
+            return false;
         }
-        return current_condition;
+
+        System.out.printf("%s chasing mouse\n", this.name);
+        this.satiety--;
+        return true;
     }
 
     private boolean purr() {
-        boolean current_condition = this.isSatiety();
-        if (current_condition) {
-            System.out.printf("%s purring\n", this.name);
-            this.satiety--;
+
+        if (!this.isSatiety()) {
+            return false;
         }
-        return current_condition;
+
+        System.out.printf("%s purring\n", this.name);
+        this.satiety--;
+        return true;
     }
 
     private boolean bePretty() {
-        boolean current_condition = this.isSatiety();
-        if (current_condition) {
-            System.out.printf("%s behaves prettily\n", this.name);
-            this.satiety--;
+
+        if (!this.isSatiety()) {
+            return false;
         }
-        return current_condition;
+
+        System.out.printf("%s behaves prettily\n", this.name);
+        this.satiety--;
+        return true;
     }
 
     private void eat(int satiety_score) {
