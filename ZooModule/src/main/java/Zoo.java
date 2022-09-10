@@ -1,7 +1,4 @@
-import animals.Bear;
-import animals.Duck;
-import animals.Fish;
-import animals.Swim;
+import animals.*;
 import food.Grass;
 import food.Meat;
 import services.Worker;
@@ -39,7 +36,5 @@ public class Zoo {
         for (Swim swimmable_animal : pool) {
             swimmable_animal.swim();
         }
-
-
     }
 }

@@ -6,11 +6,21 @@
 
     <groupId>parent.module</groupId>
     <artifactId>JavaLearn</artifactId>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+    </dependencies>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>KotikModule</module>
         <module>ZooModule</module>
+        <module>EnclosureModule</module>
+        <module>CustomTypesModule</module>
     </modules>
 
     <properties>
