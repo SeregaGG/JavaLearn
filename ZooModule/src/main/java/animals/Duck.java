@@ -1,10 +1,11 @@
 package animals;
 
-public class Duck extends Carnivorous implements Fly, Voice, Swim {
-    private static final String VOICE_SOUND = "krya krya";
+import types.EnclosureType;
 
-    public Duck(String name) {
-        this.name = name;
+public class Duck extends Carnivorous implements Fly, Voice, Swim {
+    public Duck(String name, EnclosureType enclosure_type) {
+        super(name, enclosure_type);
+        VOICE_SOUND = "krya krya";
     }
 
     @Override

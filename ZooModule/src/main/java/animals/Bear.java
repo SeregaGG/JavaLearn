@@ -1,12 +1,13 @@
 package animals;
 
+import types.EnclosureType;
+
 public class Bear extends Carnivorous implements Voice, Run {
-
-    private static final String VOICE_SOUND = "Rrrrrr";
-
-    public Bear(String name) {
-        this.name = name;
+    public Bear(String name, EnclosureType enclosure_type) {
+        super(name, enclosure_type);
+        VOICE_SOUND = "Rrrrrr";
     }
+
     @Override
     public String voice() {
         return VOICE_SOUND;

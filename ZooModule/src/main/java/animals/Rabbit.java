@@ -1,10 +1,13 @@
 package animals;
 
+import types.EnclosureType;
+
 public class Rabbit extends Herbivore implements Run {
 
-    public Rabbit(String name) {
-        this.name = name;
+    public Rabbit(String name, EnclosureType enclosure_type) {
+        super(name, enclosure_type);
     }
+
     @Override
     public boolean run() {
         if (this.satiety <= 0) {
