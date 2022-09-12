@@ -1,10 +1,8 @@
 package animals;
 
 public class Bear extends Carnivorous implements Voice, Run {
-
-    private static final String VOICE_SOUND = "Rrrrrr";
-
     public Bear(String name) {
+        VOICE_SOUND = "Rrrrrr";
         this.name = name;
     }
     @Override

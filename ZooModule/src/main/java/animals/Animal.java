@@ -9,6 +9,7 @@ public abstract class Animal {
 
     protected int satiety = 10;
     protected String name;
+    protected String VOICE_SOUND = "default";
     protected static final Logger log = Logger.getLogger(Animal.class);
     private EnclosureTypes enclosure_type = EnclosureTypes.MEDIUM;
     public abstract void eat(Food food) throws WrongFoodException;

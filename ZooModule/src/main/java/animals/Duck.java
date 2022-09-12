@@ -1,9 +1,8 @@
 package animals;
 
 public class Duck extends Carnivorous implements Fly, Voice, Swim {
-    private static final String VOICE_SOUND = "krya krya";
-
     public Duck(String name) {
+        VOICE_SOUND = "krya krya";
         this.name = name;
     }
 
